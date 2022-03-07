@@ -1,17 +1,21 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "sawirricardo/laravel-rajaongkir",
+    "description": "📦 Use RajaOngkir API in your Laravel apps.",
     "keywords": [
-        ":vendor_name",
+        "sawirricardo",
         "laravel",
-        ":package_slug"
+        "laravel-rajaongkir",
+        "rajaongkir",
+        "ongkir",
+        "delivery",
+        "indonesia"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/sawirricardo/laravel-rajaongkir",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "sawirricardo",
+            "email": "sawir.ricardo@gmail.com",
             "role": "Developer"
         }
     ],
@@ -34,13 +38,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Sawirricardo\\Rajaongkir\\": "src",
+            "Sawirricardo\\Rajaongkir\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Sawirricardo\\Rajaongkir\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,15 +53,19 @@
         "test-coverage": "vendor/bin/pest --coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Sawirricardo\\Rajaongkir\\Laravel\\RajaongkirServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Rajaongkir": "Sawirricardo\\Rajaongkir\\Laravel\\Facades\\Rajaongkir"
             }
         }
     },
