@@ -2,9 +2,9 @@
 
 namespace Sawirricardo\Rajaongkir\Laravel;
 
+use Sawirricardo\Rajaongkir\Laravel\Commands\RajaongkirCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Sawirricardo\Rajaongkir\Laravel\Commands\RajaongkirCommand;
 
 class RajaongkirServiceProvider extends PackageServiceProvider
 {
