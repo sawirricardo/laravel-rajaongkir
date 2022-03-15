@@ -39,7 +39,8 @@
     "autoload": {
         "psr-4": {
             "Sawirricardo\\Rajaongkir\\": "src",
-            "Sawirricardo\\Rajaongkir\\Database\\Factories\\": "database/factories"
+            "Sawirricardo\\Rajaongkir\\Database\\Factories\\": "database/factories",
+            "Sawirricardo\\Rajaongkir\\Database\\Seeders\\": "database/seeders"
         }
     },
     "autoload-dev": {

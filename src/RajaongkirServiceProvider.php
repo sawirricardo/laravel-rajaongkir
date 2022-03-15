@@ -18,7 +18,7 @@ class RajaongkirServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-rajaongkir')
             ->hasConfigFile()
-            ->hasMigration('create_laravel-rajaongkir_table')
+            ->hasMigration('create_rajaongkir_table')
             ->hasCommand(RajaongkirCommand::class);
     }
 }

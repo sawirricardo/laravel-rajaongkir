@@ -8,12 +8,15 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('laravel_rajaongkir_table', function (Blueprint $table) {
+        Schema::create('rajaongkir_regions', function (Blueprint $table) {
             $table->id();
-
-            // add fields
-
-            $table->timestamps();
+            $table->string('name');
+            $table->unsignedBigInteger('rajaongkir_id')->index();
+            $table->integer('type')->comment('1 = province, 2 = city, 3 = subdistrict')->index();
+            $table->unsignedInteger('_lft')->default(0);
+            $table->unsignedInteger('_rgt')->default(0);
+            $table->unsignedInteger('parent_id')->nullable();
+            $table->jsonb('meta')->nullable();
         });
     }
 };
