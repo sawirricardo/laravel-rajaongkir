@@ -11,7 +11,7 @@ class RajaongkirRegionSeeder extends Seeder
     public function run()
     {
         Http::withHeaders([
-            'key' => '145c3e927958d8393822e52c4e5be229',
+            'key' => config('rajaongkir.api_key'),
         ])->get('https://api.rajaongkir.com/starter/province')
             ->collect('rajaongkir.results')
             ->each(function ($province) {
@@ -23,7 +23,7 @@ class RajaongkirRegionSeeder extends Seeder
             });
 
         Http::withHeaders([
-            'key' => '145c3e927958d8393822e52c4e5be229',
+            'key' => config('rajaongkir.api_key'),
         ])->get('https://api.rajaongkir.com/starter/city')
             ->collect('rajaongkir.results')
             ->each(function ($city) {
