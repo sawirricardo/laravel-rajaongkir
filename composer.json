@@ -12,6 +12,7 @@
     ],
     "homepage": "https://github.com/sawirricardo/laravel-rajaongkir",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "sawirricardo",
@@ -41,7 +42,10 @@
             "Sawirricardo\\Rajaongkir\\Laravel\\": "src",
             "Sawirricardo\\Rajaongkir\\Database\\Factories\\": "database/factories",
             "Sawirricardo\\Rajaongkir\\Database\\Seeders\\": "database/seeders"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
