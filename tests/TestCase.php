@@ -1,10 +1,10 @@
 <?php
 
-namespace Sawirricardo\Rajaongkir\Tests;
+namespace Sawirricardo\Rajaongkir\Laravel\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Sawirricardo\Rajaongkir\RajaongkirServiceProvider;
+use Sawirricardo\Rajaongkir\Laravel\RajaongkirServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Sawirricardo\\Rajaongkir\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Sawirricardo\\Rajaongkir\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 

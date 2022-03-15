@@ -38,14 +38,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Sawirricardo\\Rajaongkir\\": "src",
+            "Sawirricardo\\Rajaongkir\\Laravel\\": "src",
             "Sawirricardo\\Rajaongkir\\Database\\Factories\\": "database/factories",
             "Sawirricardo\\Rajaongkir\\Database\\Seeders\\": "database/seeders"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sawirricardo\\Rajaongkir\\Tests\\": "tests"
+            "Sawirricardo\\Rajaongkir\\Laravel\\Tests\\": "tests"
         }
     },
     "scripts": {
